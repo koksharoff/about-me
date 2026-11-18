@@ -52,8 +52,58 @@
   document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
   document.addEventListener('click', e => { if (!header.contains(e.target)) setMenu(false); });
 
+  /* ---------- section titles: split into words ---------- */
+  document.querySelectorAll('main h2').forEach(h => {
+    let i = 0;
+    const wrap = node => {
+      [...node.childNodes].forEach(n => {
+        if (n.nodeType === 3) {
+          const frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(part => {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+            const w = document.createElement('span');
+            w.className = 'w'; w.style.setProperty('--i', i++); w.textContent = part;
+            frag.appendChild(w);
+          });
+          n.replaceWith(frag);
+        } else if (n.nodeType === 1 && n.tagName !== 'BR') wrap(n);
+      });
+    };
+    wrap(h);
+    h.classList.add('split', 'reveal-split');
+  });
+
+  /* ---------- stats: count up ---------- */
+  const countUp = el => {
+    const m = el.textContent.match(/^(\d+)(.*)$/);
+    if (!m) return;
+    const to = +m[1], rest = m[2], dur = reduce.matches ? 500 : 1100, t0 = performance.now();
+    const tick = now => {
+      const k = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(to * e) + rest;
+      if (k < 1) requestAnimationFrame(tick);
+    };
+    el.textContent = '0' + rest;
+    requestAnimationFrame(tick);
+  };
+  setTimeout(() => document.querySelectorAll('.stats b').forEach(countUp), 400);
+
+  /* ---------- timeline progress line ---------- */
+  const timeline = document.querySelector('.timeline');
+  if (timeline) {
+    const upd = () => {
+      const r = timeline.getBoundingClientRect();
+      const p = (innerHeight * 0.6 - r.top) / r.height;
+      timeline.style.setProperty('--progress', Math.max(0, Math.min(1, p)).toFixed(3));
+    };
+    upd();
+    window.addEventListener('scroll', upd, { passive: true });
+    window.addEventListener('resize', upd);
+  }
+
   /* ---------- reveal on scroll ---------- */
-  const items = document.querySelectorAll('.reveal');
+  const items = document.querySelectorAll('.reveal, .reveal-split');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver(entries => {
       entries.forEach(en => {
