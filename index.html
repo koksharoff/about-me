@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Вячеслав Кокшаров — основатель «Моё зерно»</title>
+  <meta name="description" content="Вячеслав Кокшаров, 19 лет. Основатель агротех-стартапа «Моё зерно», студент Тимирязевки, разработчик и DevOps-инженер.">
+  <meta property="og:title" content="Вячеслав Кокшаров">
+  <meta property="og:description" content="Основатель «Моё зерно», студент Тимирязевки, разработчик. Строю облачную платформу для зернохранилищ.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#141414">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header" id="top">
+  <div class="header__bar">
+    <a class="logo" href="#top" aria-label="На главную">[ кокшаров ]</a>
+    <nav class="nav" id="nav" aria-label="Разделы">
+      <a href="#about">Обо мне</a>
+      <a href="#project">Проект</a>
+      <a href="#works">Работы</a>
+      <a href="#path">Путь</a>
+      <a href="#interests">Интересы</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <a class="btn btn--red btn--sm" href="#contacts">Написать</a>
+    <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__bg" aria-hidden="true">
+      <svg class="hero__field" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+            <stop offset=".55" stop-color="#fff" stop-opacity=".22"/>
+            <stop offset="1" stop-color="#fff" stop-opacity=".5"/>
+          </linearGradient>
+        </defs>
+        <g stroke="url(#fade)" stroke-width="1.2" fill="none" id="rows"></g>
+      </svg>
+      <div class="hero__glow"></div>
+      <div class="hero__grain"></div>
+    </div>
+
+    <div class="wrap hero__inner">
+      <p class="hero__kicker reveal">Вячеслав Кокшаров · 19 лет · Москва</p>
+      <h1 class="hero__title reveal" id="hero-title">Вижу проблему&nbsp;—<br><span class="accent">пишу решение</span></h1>
+      <p class="hero__lead reveal">Основатель агротех-стартапа «Моё зерно», студент Тимирязевки и&nbsp;разработчик, который в&nbsp;одиночку собрал облачную платформу для зернохранилищ.</p>
+      <div class="hero__actions reveal">
+        <a class="btn btn--red" href="#contacts">Написать мне</a>
+        <a class="btn btn--ghost" href="#project">Что я строю</a>
+      </div>
+
+      <ul class="stats reveal">
+        <li><b>19 лет</b><span>основатель «Моё зерно»</span></li>
+        <li><b>2 курс</b><span>РГАУ-МСХА, ИСиТ</span></li>
+        <li><b>1 этап</b><span>агроакселератора РСХБ пройден</span></li>
+        <li><b>86</b><span>хранилищ зерна в базе</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 1. ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <p class="label">1 — Обо мне</p>
+          <h2>Основатель, разработчик, студент</h2>
+        </div>
+        <p class="head__aside">Совмещаю учёбу с собственным стартапом и пишу код, который сам же разворачиваю на&nbsp;серверах.</p>
+      </div>
+
+      <div class="bento">
+        <article class="card card--dark card--wide reveal">
+          <div class="portrait" aria-hidden="true">
+            <!-- Фото: положи assets/photo.jpg и раскомментируй строку ниже -->
+            <!-- <img src="assets/photo.jpg" alt=""> -->
+            <span>ВК</span>
+          </div>
+          <div>
+            <h3>Основатель «Моё зерно»</h3>
+            <p>С сентября 2026 года строю облачную платформу для зернохранилищ: термометрия, учёт в&nbsp;1С и&nbsp;отчётность в&nbsp;ФГИС «Зерно» в&nbsp;одном окне.</p>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></div>
+          <h3>Разработчик</h3>
+          <p>Go, React, MQTT, Docker. Прототип платформы спроектировал, написал и&nbsp;развернул сам.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="6" rx="2"/><rect x="4" y="14" width="16" height="6" rx="2"/><path d="M8 7h.01M8 17h.01"/></svg></div>
+          <h3>DevOps</h3>
+          <p>Опыт в&nbsp;DevOps и&nbsp;продуктовой разработке в&nbsp;разных компаниях, в&nbsp;том числе крупных. Серверы, CI, бэкапы, безопасность.</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></svg></div>
+          <h3>Студент Тимирязевки</h3>
+          <p>2 курс РГАУ-МСХА имени К.&nbsp;А.&nbsp;Тимирязева, «Информационные системы и&nbsp;технологии».</p>
+        </article>
+
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></div>
+          <h3>Блогер</h3>
+          <p>Веду Instagram о&nbsp;пути молодого фаундера: ниша, финансирование, проверка спроса и&nbsp;как не&nbsp;выгореть в&nbsp;20&nbsp;лет.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. PROJECT -->
+  <section class="night" id="project">
+    <div class="wrap night__grid">
+      <div class="reveal">
+        <p class="label label--light">2 — Главный проект</p>
+        <h2 class="night__title">«Моё зерно»: храним зерно, сохраняем деньги</h2>
+        <p class="night__lead">Урожай в&nbsp;России — около 142&nbsp;млн тонн, а&nbsp;при доработке и&nbsp;хранении теряется до&nbsp;5–7&nbsp;% в&nbsp;год. Большая часть потерь — от&nbsp;самосогревания, которое замечают слишком поздно.</p>
+        <ul class="chips">
+          <li>Go</li><li>React</li><li>MQTT</li><li>1С</li><li>ФГИС «Зерно»</li><li>Docker</li>
+        </ul>
+      </div>
+
+      <div class="panel reveal">
+        <p class="panel__kicker">Платформа · подписка</p>
+        <h3>Одно окно для зернохранилища</h3>
+        <p class="panel__text">Подключается к&nbsp;термометрии, которая уже стоит в&nbsp;хранилище, и&nbsp;к&nbsp;1С.</p>
+        <ul class="checks">
+          <li>Состояние зерна в&nbsp;каждом силосе и&nbsp;предупреждения о&nbsp;самосогревании</li>
+          <li>Интеграция с&nbsp;1С: УТ&nbsp;11, КА, ERP, БП&nbsp;3.0</li>
+          <li>Подготовка данных для ФГИС «Зерно»</li>
+          <li>Новые датчики не&nbsp;нужны — без капитальных затрат</li>
+        </ul>
+        <a class="btn btn--red btn--block" href="https://zerno.willmc.ru/demo" target="_blank" rel="noopener">Открыть демо <span aria-hidden="true">→</span></a>
+        <p class="panel__note">Без регистрации: обзор хранилищ, карта, аналитика, календарь приёмки.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. WORKS -->
+  <section class="section section--paper" id="works">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <p class="label">3 — Работы</p>
+          <h2>Что ещё я сделал</h2>
+        </div>
+        <p class="head__aside">Инструменты для себя, учебные проекты и&nbsp;инфраструктура — всё, на&nbsp;чём учился строить продукт.</p>
+      </div>
+
+      <div class="works">
+        <a class="work reveal" href="https://github.com/koksharoff/TimeTracker" target="_blank" rel="noopener">
+          <span class="work__num">01</span>
+          <h3>Time Tracker for Coding</h3>
+          <p>Self-hosted трекер времени в&nbsp;коде: расширение VS Code, бэкенд и&nbsp;минималистичный дашборд со светлой и&nbsp;тёмной темой.</p>
+          <ul class="tags"><li>VS Code</li><li>Docker</li><li>Dashboard</li></ul>
+          <span class="work__link">GitHub →</span>
+        </a>
+        <a class="work reveal" href="https://github.com/koksharoff/ansible-server-baseline" target="_blank" rel="noopener">
+          <span class="work__num">02</span>
+          <h3>Ansible Server Baseline</h3>
+          <p>Роли, которые превращают чистый Debian/Ubuntu в&nbsp;защищённый сервер: SSH, файрвол, пользователи — одинаково для dev, stage и&nbsp;prod.</p>
+          <ul class="tags"><li>Ansible</li><li>Linux</li><li>Security</li></ul>
+          <span class="work__link">GitHub →</span>
+        </a>
+        <article class="work reveal">
+          <span class="work__num">03</span>
+          <h3>Бот «Гранты и конкурсы»</h3>
+          <p>Каждое утро присылает в&nbsp;Telegram новые гранты и&nbsp;акселераторы с&nbsp;дедлайнами и&nbsp;новости о&nbsp;хранении зерна. Работает без сервера.</p>
+          <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>Telegram</li></ul>
+        </article>
+        <article class="work reveal">
+          <span class="work__num">04</span>
+          <h3>AgroStep</h3>
+          <p>Учебный проект: система раннего выявления нарушений походки у&nbsp;свиноматок — лендинг, API и&nbsp;кабинет ветеринара.</p>
+          <ul class="tags"><li>FastAPI</li><li>React</li><li>Docker</li></ul>
+        </article>
+        <article class="work reveal">
+          <span class="work__num">05</span>
+          <h3>WishQuest</h3>
+          <p>Курсовая: кроссплатформенный вишлист с&nbsp;геймификацией, который превращает планирование покупок в&nbsp;квест.</p>
+          <ul class="tags"><li>Python</li><li>PySide6</li></ul>
+        </article>
+        <article class="work reveal">
+          <span class="work__num">06</span>
+          <h3>AgroSimulation</h3>
+          <p>Текстовая пошаговая стратегия: управляешь фермой, планируешь посевы и&nbsp;собираешь урожай, приумножая бюджет.</p>
+          <ul class="tags"><li>Python</li><li>Game</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PATH -->
+  <section class="section" id="path">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <p class="label">4 — Путь · сентябрь — декабрь 2026</p>
+          <h2>Как растёт «Моё зерно»</h2>
+        </div>
+        <p class="head__aside">Пишу честно: подача заявки — ещё не&nbsp;победа, поэтому у&nbsp;каждого шага свой статус.</p>
+      </div>
+
+      <ol class="timeline">
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">Сентябрь 2026</span>
+            <span class="step__title">Начал разработку платформы в&nbsp;одиночку</span>
+            <span class="pill pill--done">факт</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Серверная часть на&nbsp;Go, веб-кабинет на&nbsp;React, приём показаний датчиков по&nbsp;MQTT, интеграция с&nbsp;1С, календарь приёмки и&nbsp;отгрузки, аналитика, тарифы и&nbsp;панель администратора.</p></div>
+        </li>
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">16 октября</span>
+            <span class="step__title">Перевёл проект на&nbsp;командную работу</span>
+            <span class="pill pill--done">факт</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Группа в&nbsp;GitLab, код-ревью через merge request, защищённая основная ветка, резервная копия кода и&nbsp;10 страниц вики для онбординга новых участников.</p></div>
+        </li>
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">19 октября</span>
+            <span class="step__title">Запустил публичное демо</span>
+            <span class="pill pill--done">факт</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Личный кабинет можно открыть без регистрации и&nbsp;посмотреть обзор хранилищ, карту, аналитику и&nbsp;календарь приёмки.</p></div>
+        </li>
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">Октябрь 2026</span>
+            <span class="step__title">Подал заявку в&nbsp;агроакселератор РСХБ × Сколково</span>
+            <span class="pill pill--sent">подано</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Презентация на&nbsp;13 слайдов по&nbsp;требованиям акселератора, включая идею мониторинга зерна в&nbsp;залоге для банка.</p></div>
+        </li>
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">3 ноября</span>
+            <span class="step__title">Жёсткий фидбэк эксперта — и&nbsp;новое позиционирование</span>
+            <span class="pill pill--done">факт</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Эксперт из&nbsp;агроотрасли сказала, что таких решений много. За&nbsp;сутки разобрал конкурентов и&nbsp;сформулировал отличие: «термометрия + 1С + ФГИС «Зерно» в&nbsp;одном окне», на&nbsp;уже установленном оборудовании.</p></div>
+        </li>
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">11 ноября</span>
+            <span class="step__title">Питч на&nbsp;инвестиционной сессии РСХБ «Агротехнологии будущего»</span>
+            <span class="pill pill--done">факт</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Три минуты и&nbsp;семь слайдов перед инвесторами и&nbsp;экспертами. Ушёл с&nbsp;контактами проверенных интеграторов и&nbsp;советами предпринимателей.</p></div>
+        </li>
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">12 ноября</span>
+            <span class="step__title">Прошёл первый этап агроакселератора РСХБ</span>
+            <span class="pill pill--done">факт</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Заявка прошла оценку экспертов. Онлайн-встреча второго этапа уже состоялась — жду решения.</p></div>
+        </li>
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">Ноябрь 2026</span>
+            <span class="step__title">Заявка на&nbsp;грант ФСИ «Студенческий стартап», 1&nbsp;млн&nbsp;₽</span>
+            <span class="pill pill--sent">подано</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Подана через РГАУ-МСХА. Тема — цифровой комплекс для контроля самосогревания зерна при хранении.</p></div>
+        </li>
+        <li class="step reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">17 ноября</span>
+            <span class="step__title">ЮГАГРО-2026 в&nbsp;Краснодаре: первый потенциальный пилот</span>
+            <span class="pill pill--wip">в процессе</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Специально приехал из&nbsp;Москвы проверить продукт на&nbsp;живом рынке. Зерновое предприятие взяло контакты для пилота, а&nbsp;производители оборудования рассказали, что облачный доступ к&nbsp;термометрии пока есть у&nbsp;единиц.</p></div>
+        </li>
+        <li class="step step--goal reveal">
+          <button class="step__head" type="button" aria-expanded="false">
+            <span class="step__date">До 15 декабря</span>
+            <span class="step__title">Три пилота на&nbsp;хранилищах зерна</span>
+            <span class="pill pill--goal">цель</span>
+            <span class="step__plus" aria-hidden="true"></span>
+          </button>
+          <div class="step__body"><p>Пилот — три месяца по&nbsp;символической цене и&nbsp;проверка интеграций с&nbsp;1С и&nbsp;ФГИС «Зерно» на&nbsp;реальных данных.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. INTERESTS -->
+  <section class="section section--paper" id="interests">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <p class="label">5 — Интересы</p>
+          <h2>Чем я живу</h2>
+        </div>
+        <p class="head__aside">Нажми на&nbsp;тему, чтобы узнать подробнее.</p>
+      </div>
+
+      <div class="interests">
+        <div class="interests__list reveal" role="tablist" aria-label="Интересы">
+          <button role="tab" aria-selected="true" data-i="0"><span>1</span>Агротех</button>
+          <button role="tab" aria-selected="false" data-i="1"><span>2</span>Стартапы и&nbsp;финансирование</button>
+          <button role="tab" aria-selected="false" data-i="2"><span>3</span>Инфраструктура и&nbsp;DevOps</button>
+          <button role="tab" aria-selected="false" data-i="3"><span>4</span>Продуктовая разработка</button>
+          <button role="tab" aria-selected="false" data-i="4"><span>5</span>Маркетинг B2B</button>
+          <button role="tab" aria-selected="false" data-i="5"><span>6</span>Личный бренд</button>
+          <button role="tab" aria-selected="false" data-i="6"><span>7</span>ИИ в&nbsp;агро</button>
+        </div>
+
+        <div class="interest reveal" role="tabpanel" aria-live="polite">
+          <p class="interest__count"><span id="i-num">1</span> / 7</p>
+          <h3 id="i-title">Агротех</h3>
+          <p class="interest__sub" id="i-sub">Цифровизация хранения зерна</p>
+          <p class="interest__text" id="i-text"></p>
+          <p class="interest__label">Что меня цепляет</p>
+          <ul class="interest__list" id="i-list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. STORIES -->
+  <section class="section" id="stories">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <p class="label">6 — Истории</p>
+          <h2>Что было по&nbsp;дороге</h2>
+        </div>
+      </div>
+      <div class="stories">
+        <article class="story reveal">
+          <p class="story__quote">«Провалил встречу, но&nbsp;не&nbsp;бросил»</p>
+          <p>Эксперт из&nbsp;агроотрасли посоветовала сменить идею. За&nbsp;сутки я&nbsp;разобрал конкурентов и&nbsp;переформулировал отличие проекта. Через неделю — питч в&nbsp;РСХБ и&nbsp;первый этап акселератора.</p>
+          <span class="story__meta">Ноябрь 2026</span>
+        </article>
+        <article class="story reveal">
+          <p class="story__quote">«Приехал из&nbsp;Москвы проверить идею на&nbsp;рынке»</p>
+          <p>На&nbsp;ЮГАГРО сам обходил стенды, слушал производителей оборудования и&nbsp;показывал продукт. Одно зерновое предприятие взяло контакты как потенциальный пилот.</p>
+          <span class="story__meta">ЮГАГРО-2026, Краснодар</span>
+        </article>
+        <article class="story reveal">
+          <p class="story__quote">«Молодой фаундер в&nbsp;консервативной отрасли»</p>
+          <p>Участники рынка не&nbsp;сразу воспринимают 19-летнего студента всерьёз. Для меня это не&nbsp;барьер, а&nbsp;часть пути — и&nbsp;то, о&nbsp;чём я&nbsp;рассказываю в&nbsp;блоге.</p>
+          <span class="story__meta">Каждый день</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CONTACTS -->
+  <section class="join" id="contacts">
+    <div class="wrap join__grid">
+      <div class="reveal">
+        <p class="label label--light">7 — Контакты</p>
+        <h2 class="join__title">Давай сделаем что&#8209;то полезное.</h2>
+        <p class="join__lead">Ищу первые пилоты среди зернохранилищ, партнёров-производителей термометрии и&nbsp;наставников из&nbsp;агроотрасли. Пиши — отвечу.</p>
+      </div>
+      <div class="contact-card reveal">
+        <p class="panel__kicker">Где меня найти</p>
+        <a class="contact" href="https://www.instagram.com/slava_koksh/" target="_blank" rel="noopener">
+          <span class="contact__name">Instagram</span><span class="contact__val">@slava_koksh</span><span class="contact__arrow">→</span>
+        </a>
+        <a class="contact" href="https://github.com/koksharoff" target="_blank" rel="noopener">
+          <span class="contact__name">GitHub</span><span class="contact__val">koksharoff</span><span class="contact__arrow">→</span>
+        </a>
+        <a class="contact" href="https://zerno.willmc.ru/demo" target="_blank" rel="noopener">
+          <span class="contact__name">«Моё зерно»</span><span class="contact__val">демо платформы</span><span class="contact__arrow">→</span>
+        </a>
+        <a class="btn btn--red btn--block" href="https://www.instagram.com/slava_koksh/" target="_blank" rel="noopener">Написать в&nbsp;Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap faq">
+      <h2 class="faq__title reveal">Частые<br>вопросы</h2>
+      <div class="faq__list">
+        <details class="reveal">
+          <summary>Что такое «Моё зерно»?</summary>
+          <p>Облачная платформа для зернохранилищ. Она подключается к&nbsp;уже установленной термометрии и&nbsp;к&nbsp;1С, показывает состояние зерна в&nbsp;каждом силосе, предупреждает о&nbsp;самосогревании и&nbsp;готовит данные для ФГИС «Зерно».</p>
+        </details>
+        <details class="reveal">
+          <summary>Нужно покупать новые датчики?</summary>
+          <p>Нет. Платформа работает поверх оборудования, которое уже стоит в&nbsp;хранилище. Это подписка без капитальных затрат.</p>
+        </details>
+        <details class="reveal">
+          <summary>Как попасть в&nbsp;пилот?</summary>
+          <p>Напиши мне. Пилот длится три месяца по&nbsp;символической цене: подключаем ваши данные и&nbsp;проверяем интеграции с&nbsp;1С и&nbsp;ФГИС «Зерно» в&nbsp;реальной работе.</p>
+        </details>
+        <details class="reveal">
+          <summary>Можно посмотреть продукт?</summary>
+          <p>Да, демо открывается без регистрации: <a href="https://zerno.willmc.ru/demo" target="_blank" rel="noopener">zerno.willmc.ru/demo</a>.</p>
+        </details>
+        <details class="reveal">
+          <summary>Ты делаешь всё один?</summary>
+          <p>Прототип платформы я&nbsp;написал и&nbsp;развернул сам. Сейчас в&nbsp;проекте уже есть специалист по&nbsp;маркетингу, и&nbsp;команда растёт.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__row">
+    <span class="logo logo--dark">[ кокшаров ]</span>
+    <span>© 2026 Вячеслав Кокшаров</span>
+    <a href="#top">Наверх ↑</a>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
