@@ -1,18 +1,18 @@
-/* Акцент по умолчанию — синий/голубой.
-   Сравнить: ?accent=green | ?accent=red (или <html data-accent="…">). */
+/* Акцент по умолчанию — зелёный (связь с «Моё зерно», рост).
+   Сравнить: ?accent=blue | ?accent=red (или <html data-accent="…">). */
 :root {
-  --bg: #f7f8fa;
-  --paper: #eef1f6;
+  --bg: #f8f9f7;
+  --paper: #eef2eb;
   --ink: #171717;
-  --muted: #5c636e;
-  --line: #e0e5ec;
-  --accent: #1677ff;          /* заливки: кнопки, точки, иконки */
-  --accent-hover: #0b63e0;
-  --on-accent: #fff;          /* текст на заливке */
-  --accent-ink: #0d5fd8;      /* акцентный текст на светлом */
-  --accent-light: #5cb0ff;    /* акцентный (голубой) текст на тёмном */
-  --soft: #e5efff;
-  --glow: 40, 140, 255;
+  --muted: #5f655c;
+  --line: #e1e6dd;
+  --accent: #4cbb17;          /* заливки: кнопки, точки, иконки */
+  --accent-hover: #5bd024;
+  --on-accent: #0c1a05;       /* текст на заливке */
+  --accent-ink: #2b7d0c;      /* акцентный текст на светлом */
+  --accent-light: #6fd63a;    /* акцентный текст на тёмном */
+  --soft: #e6f4dd;
+  --glow: 76, 187, 23;
   --night: #141414;
   --night-2: #1d1d1d;
   --font: "Helvetica Neue", Helvetica, "Nimbus Sans", "Nimbus Sans L", "Liberation Sans", Arial, sans-serif;
@@ -24,18 +24,18 @@
   --ease: cubic-bezier(.2, .7, .2, 1);
   color-scheme: light;
 }
-:root[data-accent="green"] {
-  --bg: #f8f9f7;
-  --paper: #eef2eb;
-  --muted: #5f655c;
-  --line: #e1e6dd;
-  --accent: #4cbb17;
-  --accent-hover: #5bd024;
-  --on-accent: #0c1a05;
-  --accent-ink: #2b7d0c;
-  --accent-light: #6fd63a;
-  --soft: #e6f4dd;
-  --glow: 76, 187, 23;
+:root[data-accent="blue"] {
+  --bg: #f7f8fa;
+  --paper: #eef1f6;
+  --muted: #5c636e;
+  --line: #e0e5ec;
+  --accent: #1677ff;
+  --accent-hover: #0b63e0;
+  --on-accent: #fff;
+  --accent-ink: #0d5fd8;
+  --accent-light: #5cb0ff;
+  --soft: #e5efff;
+  --glow: 40, 140, 255;
 }
 :root[data-accent="red"] {
   --bg: #fbfaf8;

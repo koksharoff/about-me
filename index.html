@@ -11,10 +11,10 @@
   <meta name="theme-color" content="#141414">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <script>
-    /* Сравнить акценты: ?accent=red | ?accent=green */
+    /* Сравнить акценты: ?accent=blue | ?accent=red */
     (function () {
       var a = new URLSearchParams(location.search).get('accent');
-      if (a === 'red' || a === 'green') document.documentElement.dataset.accent = a;
+      if (a === 'blue' || a === 'red') document.documentElement.dataset.accent = a;
     })();
   </script>
   <link rel="stylesheet" href="styles.css">

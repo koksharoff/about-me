@@ -20,7 +20,7 @@ Settings → Pages → Source: «Deploy from a branch», ветка `main`, па
 ## Что поменять
 
 - **Фото:** заменить `assets/photo.jpg` (квадратное).
-- **Цвет акцента:** по умолчанию синий; сравнить — открыть сайт с `?accent=green` или `?accent=red`. Токены в начале `styles.css`.
+- **Цвет акцента:** по умолчанию зелёный; сравнить — открыть сайт с `?accent=blue` или `?accent=red`. Токены в начале `styles.css`.
 - **Контакты:** раздел `#contacts` в `index.html`.
 - **Путь стартапа:** список `.timeline`; статусы — `pill--done` (факт), `pill--sent` (подано), `pill--wip` (в процессе), `pill--goal` (цель).
 - **Интересы:** массив `INTERESTS` в `script.js`.
