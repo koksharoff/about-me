@@ -19,7 +19,7 @@ Settings → Pages → Source: «Deploy from a branch», ветка `main`, па
 
 ## Что поменять
 
-- **Фото:** положить `assets/photo.jpg` (вертикальное, 4:5) и раскомментировать `<img>` в блоке «Обо мне».
+- **Фото:** заменить `assets/photo.jpg`; кадр подстраивается через `object-position` в `.portrait img`.
 - **Контакты:** раздел `#contacts` в `index.html`.
 - **Путь стартапа:** список `.timeline`; статусы — `pill--done` (факт), `pill--sent` (подано), `pill--wip` (в процессе), `pill--goal` (цель).
 - **Интересы:** массив `INTERESTS` в `script.js`.
