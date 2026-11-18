@@ -3,29 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Вячеслав Кокшаров — основатель «Моё зерно»</title>
-  <meta name="description" content="Вячеслав Кокшаров, 19 лет. Основатель агротех-стартапа «Моё зерно», студент Тимирязевки, разработчик и DevOps-инженер.">
+  <title>Вячеслав Кокшаров — DevOps и агротех</title>
+  <meta name="description" content="Вячеслав Кокшаров, 19 лет. DevOps-инженер, основатель агротех-стартапа «Моё зерно» и студент Тимирязевки.">
   <meta property="og:title" content="Вячеслав Кокшаров">
-  <meta property="og:description" content="Основатель «Моё зерно», студент Тимирязевки, разработчик. Строю облачную платформу для зернохранилищ.">
+  <meta property="og:description" content="DevOps-инженер, основатель «Моё зерно», студент Тимирязевки. Приехал в Москву из маленького города и всё строю сам.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#141414">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    /* Сравнить акценты: ?accent=red | ?accent=green */
+    (function () {
+      var a = new URLSearchParams(location.search).get('accent');
+      if (a === 'red' || a === 'green') document.documentElement.dataset.accent = a;
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="header" id="top">
   <div class="header__bar">
-    <a class="logo" href="#top" aria-label="На главную">[ кокшаров ]</a>
+    <a class="logo" href="#top" aria-label="koksh — на главную">koksh<span class="logo__cursor">_</span></a>
     <nav class="nav" id="nav" aria-label="Разделы">
       <a href="#about">Обо мне</a>
       <a href="#project">Проект</a>
-      <a href="#works">Работы</a>
+      <a href="#growth">Рост</a>
       <a href="#path">Путь</a>
       <a href="#interests">Интересы</a>
       <a href="#faq">Вопросы</a>
     </nav>
-    <a class="btn btn--red btn--sm" href="#contacts">Написать</a>
+    <a class="btn btn--accent btn--sm" href="#contacts">Написать</a>
     <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="nav">
       <span></span><span></span>
     </button>
@@ -52,19 +59,19 @@
     </div>
 
     <div class="wrap hero__inner">
-      <p class="hero__kicker reveal">Вячеслав Кокшаров · 19 лет · Москва</p>
+      <p class="hero__kicker reveal">Вячеслав Кокшаров · 19 лет · DevOps · стартапы</p>
       <h1 class="hero__title reveal" id="hero-title">Вижу проблему&nbsp;—<br><span class="accent">пишу решение</span></h1>
-      <p class="hero__lead reveal">Основатель агротех-стартапа «Моё зерно», студент Тимирязевки и&nbsp;разработчик, который в&nbsp;одиночку собрал облачную платформу для зернохранилищ.</p>
+      <p class="hero__lead reveal">DevOps-инженер, основатель агротех-стартапа «Моё зерно» и&nbsp;студент Тимирязевки. Приехал в&nbsp;Москву из&nbsp;маленького города и&nbsp;всё строю сам.</p>
       <div class="hero__actions reveal">
-        <a class="btn btn--red" href="#contacts">Написать мне</a>
+        <a class="btn btn--accent" href="#contacts">Написать мне</a>
         <a class="btn btn--ghost" href="#project">Что я строю</a>
       </div>
 
       <ul class="stats reveal">
         <li><b>19 лет</b><span>основатель «Моё зерно»</span></li>
         <li><b>2 курс</b><span>РГАУ-МСХА, ИСиТ</span></li>
-        <li><b>1 этап</b><span>агроакселератора РСХБ пройден</span></li>
-        <li><b>86</b><span>хранилищ зерна в базе</span></li>
+        <li><b>2 стартапа</b><span>агротех и&nbsp;компьютерное зрение</span></li>
+        <li><b>DevOps</b><span>опыт в&nbsp;крупной компании</span></li>
       </ul>
     </div>
   </section>
@@ -75,33 +82,33 @@
       <div class="head reveal">
         <div>
           <p class="label">1 — Обо мне</p>
-          <h2>Основатель, разработчик, студент</h2>
+          <h2>Инженер, основатель, студент</h2>
         </div>
-        <p class="head__aside">Совмещаю учёбу с собственным стартапом и пишу код, который сам же разворачиваю на&nbsp;серверах.</p>
+        <p class="head__aside">Приехал в&nbsp;Москву из&nbsp;маленького города и&nbsp;развиваюсь сам, без чьей-либо помощи: учёба, работа и&nbsp;стартапы&nbsp;— своими руками.</p>
       </div>
 
       <div class="bento">
         <article class="card card--dark card--wide reveal">
           <div class="portrait">
             <img src="assets/photo.jpg" alt="Вячеслав Кокшаров на выставке «Золотая осень»" width="640" height="640" loading="lazy">
-            <span aria-hidden="true">ВК</span>
           </div>
           <div>
             <h3>Основатель «Моё&nbsp;зерно»</h3>
-            <p>С сентября 2026 года строю облачную платформу для зернохранилищ: термометрия, учёт в&nbsp;1С и&nbsp;отчётность в&nbsp;ФГИС «Зерно» в&nbsp;одном окне.</p>
+            <p>С&nbsp;сентября 2026 года строю облачную платформу для зернохранилищ: термометрия, учёт в&nbsp;1С и&nbsp;отчётность в&nbsp;ФГИС «Зерно» в&nbsp;одном окне.</p>
           </div>
+        </article>
+
+        <article class="card card--accent reveal">
+          <span class="badge">Главное направление</span>
+          <div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="6" rx="2"/><rect x="4" y="14" width="16" height="6" rx="2"/><path d="M8 7h.01M8 17h.01"/></svg></div>
+          <h3>DevOps-инженер</h3>
+          <p>То, в&nbsp;чём я&nbsp;действительно разбираюсь: серверы, CI/CD, контейнеры, безопасность, бэкапы. Работал в&nbsp;том числе в&nbsp;крупной компании. Следующая ступень&nbsp;— MLOps.</p>
         </article>
 
         <article class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12"/></svg></div>
-          <h3>Разработчик</h3>
-          <p>Go, React, MQTT, Docker. Прототип платформы спроектировал, написал и&nbsp;развернул сам.</p>
-        </article>
-
-        <article class="card reveal">
-          <div class="icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="6" rx="2"/><rect x="4" y="14" width="16" height="6" rx="2"/><path d="M8 7h.01M8 17h.01"/></svg></div>
-          <h3>DevOps</h3>
-          <p>Опыт в&nbsp;DevOps и&nbsp;продуктовой разработке в&nbsp;разных компаниях, в&nbsp;том числе крупных. Серверы, CI, бэкапы, безопасность.</p>
+          <h3>Разработчик в&nbsp;двух стартапах</h3>
+          <p>«Моё зерно» и&nbsp;проект на&nbsp;компьютерном зрении для мониторинга. Go, React, MQTT, Docker.</p>
         </article>
 
         <article class="card reveal">
@@ -113,7 +120,7 @@
         <article class="card reveal">
           <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></div>
           <h3>Блогер</h3>
-          <p>Веду Instagram и&nbsp;Telegram-блог о&nbsp;пути молодого фаундера: ниша, финансирование, проверка спроса и&nbsp;как не&nbsp;выгореть в&nbsp;20&nbsp;лет.</p>
+          <p>Веду Instagram и&nbsp;Telegram-блог о&nbsp;пути молодого фаундера. Честно: публичность пугает, и&nbsp;я&nbsp;учусь с&nbsp;этим справляться.</p>
         </article>
       </div>
     </div>
@@ -141,61 +148,57 @@
           <li>Подготовка данных для ФГИС «Зерно»</li>
           <li>Новые датчики не&nbsp;нужны — без капитальных затрат</li>
         </ul>
-        <a class="btn btn--red btn--block" href="https://zerno.willmc.ru/demo" target="_blank" rel="noopener">Открыть демо <span aria-hidden="true">→</span></a>
+        <a class="btn btn--accent btn--block" href="https://zerno.willmc.ru/demo" target="_blank" rel="noopener">Открыть демо <span aria-hidden="true">→</span></a>
         <p class="panel__note">Без регистрации: обзор хранилищ, карта, аналитика, календарь приёмки.</p>
       </div>
     </div>
   </section>
 
-  <!-- 3. WORKS -->
-  <section class="section section--paper" id="works">
+  <!-- 3. GROWTH -->
+  <section class="section section--paper" id="growth">
     <div class="wrap">
       <div class="head reveal">
         <div>
-          <p class="label">3 — Работы</p>
-          <h2>Что ещё я сделал</h2>
+          <p class="label">3 — Как я расту</p>
+          <h2>Прокачиваю не&nbsp;только код</h2>
         </div>
-        <p class="head__aside">Инструменты для себя, учебные проекты и&nbsp;инфраструктура — всё, на&nbsp;чём учился строить продукт.</p>
+        <p class="head__aside">Технические навыки&nbsp;— половина дела. Вторую половину&nbsp;— людей, продажи и&nbsp;публичность&nbsp;— качаю специально.</p>
       </div>
 
       <div class="works">
-        <a class="work reveal" href="https://github.com/koksharoff/TimeTracker" target="_blank" rel="noopener">
+        <article class="work reveal">
           <span class="work__num">01</span>
-          <h3>Time Tracker for Coding</h3>
-          <p>Self-hosted трекер времени в&nbsp;коде: расширение VS Code, бэкенд и&nbsp;минималистичный дашборд со светлой и&nbsp;тёмной темой.</p>
-          <ul class="tags"><li>VS Code</li><li>Docker</li><li>Dashboard</li></ul>
-          <span class="work__link">GitHub →</span>
-        </a>
-        <a class="work reveal" href="https://github.com/koksharoff/ansible-server-baseline" target="_blank" rel="noopener">
+          <h3>Нетворкинг</h3>
+          <p>Хожу на&nbsp;выставки, форумы и&nbsp;питч-сессии: ЮГАГРО, «Золотая осень», РСХБ, конференция ВШЭ. Учусь знакомиться и&nbsp;разговаривать с&nbsp;рынком вживую.</p>
+        </article>
+        <article class="work reveal">
           <span class="work__num">02</span>
-          <h3>Ansible Server Baseline</h3>
-          <p>Роли, которые превращают чистый Debian/Ubuntu в&nbsp;защищённый сервер: SSH, файрвол, пользователи — одинаково для dev, stage и&nbsp;prod.</p>
-          <ul class="tags"><li>Ansible</li><li>Linux</li><li>Security</li></ul>
-          <span class="work__link">GitHub →</span>
-        </a>
+          <h3>Продажи и&nbsp;маркетинг</h3>
+          <p>Пошёл работать в&nbsp;маркетинг, чтобы прокачать продажи и&nbsp;научиться говорить с&nbsp;клиентом на&nbsp;его языке.</p>
+        </article>
         <article class="work reveal">
           <span class="work__num">03</span>
-          <h3>Бот «Гранты и конкурсы»</h3>
-          <p>Каждое утро присылает в&nbsp;Telegram новые гранты и&nbsp;акселераторы с&nbsp;дедлайнами и&nbsp;новости о&nbsp;хранении зерна. Работает без сервера.</p>
-          <ul class="tags"><li>Python</li><li>GitHub Actions</li><li>Telegram</li></ul>
+          <h3>Второй стартап</h3>
+          <p>Разрабатываю систему мониторинга на&nbsp;компьютерном зрении. Подробности&nbsp;— позже.</p>
         </article>
         <article class="work reveal">
           <span class="work__num">04</span>
-          <h3>AgroStep</h3>
-          <p>Учебный проект: система раннего выявления нарушений походки у&nbsp;свиноматок — лендинг, API и&nbsp;кабинет ветеринара.</p>
-          <ul class="tags"><li>FastAPI</li><li>React</li><li>Docker</li></ul>
+          <h3>DevOps → MLOps</h3>
+          <p>Двигаюсь от&nbsp;классической инфраструктуры к&nbsp;MLOps: как доставлять модели в&nbsp;продакшен и&nbsp;держать их&nbsp;в&nbsp;рабочем состоянии.</p>
         </article>
         <article class="work reveal">
           <span class="work__num">05</span>
-          <h3>WishQuest</h3>
-          <p>Курсовая: кроссплатформенный вишлист с&nbsp;геймификацией, который превращает планирование покупок в&nbsp;квест.</p>
-          <ul class="tags"><li>Python</li><li>PySide6</li></ul>
+          <h3>Постоянно учусь</h3>
+          <p>Тяну информацию отовсюду: конференции, разговоры с&nbsp;предпринимателями, жёсткий фидбэк экспертов. Неудобная обратная связь&nbsp;— самая полезная.</p>
         </article>
         <article class="work reveal">
           <span class="work__num">06</span>
-          <h3>AgroSimulation</h3>
-          <p>Текстовая пошаговая стратегия: управляешь фермой, планируешь посевы и&nbsp;собираешь урожай, приумножая бюджет.</p>
-          <ul class="tags"><li>Python</li><li>Game</li></ul>
+          <h3>Свои инструменты</h3>
+          <p>Пишу утилиты под себя: трекер времени в&nbsp;коде, Ansible-роли для серверов, Telegram-бот с&nbsp;грантами.</p>
+          <div class="work__links">
+            <a href="https://github.com/koksharoff/TimeTracker" target="_blank" rel="noopener">Time Tracker →</a>
+            <a href="https://github.com/koksharoff/ansible-server-baseline" target="_blank" rel="noopener">Ansible →</a>
+          </div>
         </article>
       </div>
     </div>
@@ -207,7 +210,7 @@
       <div class="head reveal">
         <div>
           <p class="label">4 — Путь · сентябрь — декабрь 2026</p>
-          <h2>Как растёт «Моё зерно»</h2>
+          <h2>Как растёт «Моё&nbsp;зерно»</h2>
         </div>
         <p class="head__aside">Пишу честно: подача заявки — ещё не&nbsp;победа, поэтому у&nbsp;каждого шага свой статус.</p>
       </div>
@@ -320,19 +323,19 @@
 
       <div class="interests">
         <div class="interests__list reveal" role="tablist" aria-label="Интересы">
-          <button role="tab" aria-selected="true" data-i="0"><span>1</span>Агротех</button>
-          <button role="tab" aria-selected="false" data-i="1"><span>2</span>Стартапы и&nbsp;финансирование</button>
-          <button role="tab" aria-selected="false" data-i="2"><span>3</span>Инфраструктура и&nbsp;DevOps</button>
+          <button role="tab" aria-selected="true" data-i="0"><span>1</span>DevOps и&nbsp;MLOps</button>
+          <button role="tab" aria-selected="false" data-i="1"><span>2</span>Агротех</button>
+          <button role="tab" aria-selected="false" data-i="2"><span>3</span>Стартапы и&nbsp;финансирование</button>
           <button role="tab" aria-selected="false" data-i="3"><span>4</span>Продуктовая разработка</button>
-          <button role="tab" aria-selected="false" data-i="4"><span>5</span>Маркетинг B2B</button>
+          <button role="tab" aria-selected="false" data-i="4"><span>5</span>Маркетинг и&nbsp;продажи</button>
           <button role="tab" aria-selected="false" data-i="5"><span>6</span>Личный бренд</button>
-          <button role="tab" aria-selected="false" data-i="6"><span>7</span>ИИ в&nbsp;агро</button>
+          <button role="tab" aria-selected="false" data-i="6"><span>7</span>ИИ и&nbsp;компьютерное зрение</button>
         </div>
 
         <div class="interest reveal" role="tabpanel" aria-live="polite">
           <p class="interest__count"><span id="i-num">1</span> / 7</p>
-          <h3 id="i-title">Агротех</h3>
-          <p class="interest__sub" id="i-sub">Цифровизация хранения зерна</p>
+          <h3 id="i-title">DevOps и MLOps</h3>
+          <p class="interest__sub" id="i-sub"></p>
           <p class="interest__text" id="i-text"></p>
           <p class="interest__label">Что меня цепляет</p>
           <ul class="interest__list" id="i-list"></ul>
@@ -352,18 +355,23 @@
       </div>
       <div class="stories">
         <article class="story reveal">
-          <p class="story__quote">«Провалил встречу, но&nbsp;не&nbsp;бросил»</p>
-          <p>Эксперт из&nbsp;агроотрасли посоветовала сменить идею. За&nbsp;сутки я&nbsp;разобрал конкурентов и&nbsp;переформулировал отличие проекта. Через неделю — питч в&nbsp;РСХБ и&nbsp;первый этап акселератора.</p>
+          <p class="story__quote">Из&nbsp;маленького города&nbsp;— в&nbsp;Москву. Сам</p>
+          <p>Приехал в&nbsp;Москву из&nbsp;маленького города и&nbsp;развиваюсь без чьей-либо помощи. Учёба, работа, стартапы&nbsp;— всё своими руками.</p>
+          <span class="story__meta">С&nbsp;чего всё началось</span>
+        </article>
+        <article class="story reveal">
+          <p class="story__quote">Мне сказали сменить идею. Я&nbsp;не&nbsp;сменил</p>
+          <p>Эксперт из&nbsp;агроотрасли посоветовала бросить проект. За&nbsp;сутки я&nbsp;разобрал конкурентов и&nbsp;переформулировал отличие. Через неделю&nbsp;— питч в&nbsp;РСХБ и&nbsp;первый этап акселератора.</p>
           <span class="story__meta">Ноябрь 2026</span>
         </article>
         <article class="story reveal">
-          <p class="story__quote">«Приехал из&nbsp;Москвы проверить идею на&nbsp;рынке»</p>
-          <p>На&nbsp;ЮГАГРО сам обходил стенды, слушал производителей оборудования и&nbsp;показывал продукт. Одно зерновое предприятие взяло контакты как потенциальный пилот.</p>
+          <p class="story__quote">1&nbsp;300&nbsp;км, чтобы проверить идею на&nbsp;рынке</p>
+          <p>Поехал из&nbsp;Москвы на&nbsp;ЮГАГРО в&nbsp;Краснодар, сам обходил стенды и&nbsp;показывал продукт. Одно зерновое предприятие взяло контакты как потенциальный пилот.</p>
           <span class="story__meta">ЮГАГРО-2026, Краснодар</span>
         </article>
         <article class="story reveal">
-          <p class="story__quote">«Молодой фаундер в&nbsp;консервативной отрасли»</p>
-          <p>Участники рынка не&nbsp;сразу воспринимают 19-летнего студента всерьёз. Для меня это не&nbsp;барьер, а&nbsp;часть пути — и&nbsp;то, о&nbsp;чём я&nbsp;рассказываю в&nbsp;блоге.</p>
+          <p class="story__quote">19&nbsp;лет&nbsp;— и&nbsp;всерьёз меня пока не&nbsp;воспринимают</p>
+          <p>Ключевое слово&nbsp;— «пока». Для меня это не&nbsp;барьер, а&nbsp;часть пути&nbsp;— и&nbsp;то, о&nbsp;чём я&nbsp;честно рассказываю в&nbsp;блоге.</p>
           <span class="story__meta">Каждый день</span>
         </article>
       </div>
@@ -392,7 +400,7 @@
         <a class="contact" href="https://zerno.willmc.ru/demo" target="_blank" rel="noopener">
           <span class="contact__name">«Моё зерно»</span><span class="contact__val">демо платформы</span><span class="contact__arrow">→</span>
         </a>
-        <a class="btn btn--red btn--block" href="https://www.instagram.com/slava_koksh/" target="_blank" rel="noopener">Написать в&nbsp;Instagram</a>
+        <a class="btn btn--accent btn--block" href="https://www.instagram.com/slava_koksh/" target="_blank" rel="noopener">Написать в&nbsp;Instagram</a>
       </div>
     </div>
   </section>
@@ -420,7 +428,7 @@
         </details>
         <details class="reveal">
           <summary>Ты делаешь всё один?</summary>
-          <p>Прототип платформы я&nbsp;написал и&nbsp;развернул сам. Сейчас в&nbsp;проекте уже есть специалист по&nbsp;маркетингу, и&nbsp;команда растёт.</p>
+          <p>Прототип платформы я&nbsp;написал и&nbsp;развернул сам&nbsp;— от&nbsp;сервера до&nbsp;интерфейса.</p>
         </details>
       </div>
     </div>
@@ -430,7 +438,7 @@
 
 <footer class="footer">
   <div class="wrap footer__row">
-    <span class="logo logo--dark">[ кокшаров ]</span>
+    <span class="logo logo--dark">koksh<span class="logo__cursor">_</span></span>
     <span>© 2026 Вячеслав Кокшаров</span>
     <a href="#top">Наверх ↑</a>
   </div>

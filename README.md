@@ -19,7 +19,8 @@ Settings → Pages → Source: «Deploy from a branch», ветка `main`, па
 
 ## Что поменять
 
-- **Фото:** заменить `assets/photo.jpg`; кадр подстраивается через `object-position` в `.portrait img`.
+- **Фото:** заменить `assets/photo.jpg` (квадратное).
+- **Цвет акцента:** по умолчанию зелёный; сравнить с красным — открыть сайт с `?accent=red`. Токены в начале `styles.css`.
 - **Контакты:** раздел `#contacts` в `index.html`.
 - **Путь стартапа:** список `.timeline`; статусы — `pill--done` (факт), `pill--sent` (подано), `pill--wip` (в процессе), `pill--goal` (цель).
 - **Интересы:** массив `INTERESTS` в `script.js`.
